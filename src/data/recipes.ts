@@ -6,7 +6,7 @@ export const recipes: Recipe[] = [
     id: '1',
     title: 'Creamy Garlic Parmesan Pasta',
     description: 'A rich and creamy pasta dish with garlic and parmesan cheese that\'s perfect for a quick weeknight dinner.',
-    image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9',
+    image: '"C:\Users\user\OneDrive\Desktop\pastaimage.jpg"',
     prepTime: 10,
     cookTime: 20,
     servings: 4,
