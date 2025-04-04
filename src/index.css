@@ -7,32 +7,32 @@
 
 @layer base {
   :root {
-    --background: 24 33% 97%;
-    --foreground: 20 14.3% 4.1%;
+    --background: 0 0% 7%;
+    --foreground: 24 10% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card: 0 0% 10%;
+    --card-foreground: 24 10% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 24 10% 95%;
 
     --primary: 24 95% 53%;
     --primary-foreground: 60 9.1% 97.8%;
 
-    --secondary: 60 56.1% 91.8%;
-    --secondary-foreground: 24 9.8% 10%;
+    --secondary: 12 6% 15%;
+    --secondary-foreground: 24 9.8% 90%;
 
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+    --muted: 12 6% 15%;
+    --muted-foreground: 24 5.3% 75%;
 
-    --accent: 12 83.2% 82.7%;
-    --accent-foreground: 24 9.8% 10%;
+    --accent: 12 83.2% 32.7%;
+    --accent-foreground: 24 9.8% 90%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
+    --border: 12 6% 20%;
+    --input: 12 6% 20%;
     --ring: 24 83% 53%;
 
     --radius: 0.5rem;
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-lato;
+    @apply bg-culinary-dark text-foreground font-lato;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -53,15 +53,15 @@
 
 @layer components {
   .hero-gradient {
-    @apply bg-gradient-to-r from-culinary-cream via-culinary-yellow to-culinary-peach;
+    @apply bg-gradient-to-r from-culinary-darkGray via-culinary-lightGray to-culinary-dark;
   }
   
   .recipe-card {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-culinary-darkGray;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold font-merriweather text-center mb-8 text-gray-800;
+    @apply text-3xl md:text-4xl font-bold font-merriweather text-center mb-8 text-gray-100;
   }
   
   .category-badge {

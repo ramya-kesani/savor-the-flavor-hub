@@ -60,6 +60,9 @@ export default {
 					cream: '#FDE1D3',
 					peach: '#FEC6A1',
 					green: '#F2FCE2',
+					dark: '#121212',
+					darkGray: '#1E1E1E',
+					lightGray: '#333333'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

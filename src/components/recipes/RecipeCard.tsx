@@ -25,7 +25,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
   const { id, title, description, image, prepTime, cookTime, servings, difficulty, rating, category, slug } = recipe;
 
   return (
-    <div className="recipe-card bg-white rounded-lg overflow-hidden shadow">
+    <div className="recipe-card bg-culinary-darkGray rounded-lg overflow-hidden shadow-md shadow-black/30">
       <Link to={`/recipe/${slug}`}>
         <div className="relative h-48 overflow-hidden">
           <img 
@@ -40,19 +40,19 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
       </Link>
       <div className="p-4">
         <div className="flex justify-between items-center mb-2">
-          <Badge variant="outline" className="text-xs font-medium">{difficulty}</Badge>
+          <Badge variant="outline" className="text-xs font-medium text-gray-300 border-gray-600">{difficulty}</Badge>
           <div className="flex items-center">
             <Star className="h-3.5 w-3.5 text-yellow-500 mr-1 fill-yellow-500" />
-            <span className="text-sm text-gray-600">{rating.toFixed(1)}</span>
+            <span className="text-sm text-gray-300">{rating.toFixed(1)}</span>
           </div>
         </div>
         <Link to={`/recipe/${slug}`}>
-          <h3 className="font-merriweather font-bold text-lg mb-2 hover:text-culinary-orange transition-colors line-clamp-2">
+          <h3 className="font-merriweather font-bold text-lg mb-2 text-gray-100 hover:text-culinary-orange transition-colors line-clamp-2">
             {title}
           </h3>
         </Link>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">{description}</p>
-        <div className="flex justify-between text-xs text-gray-500 border-t pt-3">
+        <p className="text-gray-400 text-sm mb-4 line-clamp-2">{description}</p>
+        <div className="flex justify-between text-xs text-gray-500 border-t border-gray-700 pt-3">
           <div className="flex items-center">
             <Clock className="h-3.5 w-3.5 mr-1" />
             <span>{prepTime + cookTime} mins</span>
